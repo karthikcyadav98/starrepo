@@ -3,12 +3,13 @@ import './App.css';
 
 //Pages
 import RepoList from './Pages/RepoList';
+import ErrorBoundary from './ErrorHandling/ErrorBoundary';
 
 function App() {
 	return (
-		<div className="App">
+		<ErrorBoundary>
 			<RepoList />
-		</div>
+		</ErrorBoundary>
 	);
 }
 
